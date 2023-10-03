@@ -4,8 +4,7 @@
 ################################################################################
 
 # enables support for v[1]
-Base.getindex(v::JuMP.VariableRef, i::Int) = v
-
+Base.getindex(v::JuMP.GenericVariableRef, i::Int) = v
 
 """
 Checks that all cost models are of the same type
